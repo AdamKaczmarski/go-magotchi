@@ -1,7 +1,11 @@
-package gomagotchi
+/*
+Copyright © 2023 Adam Kaczmarski
 
-import "github.com/spf13/cobra"
+*/
+package main
 
-func main(){
+import "gomagotchi/cmd"
 
+func main() {
+	cmd.Execute()
 }

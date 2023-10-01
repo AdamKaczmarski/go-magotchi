@@ -19,3 +19,4 @@ A project to learn GO and CLI apps.
 - [ ] Saving it in a shared file (config wise)
 - [ ] Printing out data for i3bar
 - [ ] how to put it on tmux bar?
+- [ ] Proper go code style? Poiners, package accesses etc

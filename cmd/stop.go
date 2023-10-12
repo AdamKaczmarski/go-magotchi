@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"gomagotchi/src"
+	"gomagotchi/internal"
 	"github.com/spf13/cobra"
 )
 
@@ -10,7 +10,7 @@ var stopCmd = &cobra.Command{
 	Use:   "stop",
 	Short: "Stops the Gomagotchi daemon",
 	Run: func(cmd *cobra.Command, args []string) {
-        src.ActOnCommand(src.STOP)
+        internal.ActOnCommand(internal.STOP)
 	},
 }
 

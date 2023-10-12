@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"gomagotchi/src"
+	"gomagotchi/internal"
 	"github.com/spf13/cobra"
 )
 
@@ -10,7 +10,7 @@ var petCmd = &cobra.Command{
 	Use:   "pet",
 	Short: "Pet you Gomagotchi",
 	Run: func(cmd *cobra.Command, args []string) {
-        src.ActOnCommand(src.PET)
+        internal.ActOnCommand(internal.PET)
 	},
 }
 

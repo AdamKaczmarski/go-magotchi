@@ -1,4 +1,4 @@
-package src 
+package internal
 
 type food struct {
 	happiness float32

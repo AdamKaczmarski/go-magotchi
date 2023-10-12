@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"github.com/spf13/cobra"
-	"gomagotchi/src"
+	"gomagotchi/internal"
 )
 
 // feedCmd represents the feed command
@@ -13,9 +13,9 @@ var feedCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		//I don't like it but it works for now
 		if args[0] == cmd.ValidArgs[0] {
-			src.ActOnCommand(src.FEED_BURGER)
+			internal.ActOnCommand(internal.FEED_BURGER)
 		} else {
-			src.ActOnCommand(src.FEED_CAKE)
+			internal.ActOnCommand(internal.FEED_CAKE)
 		}
 	},
 	ValidArgs: []string{"burger", "cake"},

@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"gomagotchi/src"
+	"gomagotchi/internal"
 	"github.com/spf13/cobra"
 )
 
@@ -10,7 +10,7 @@ var sweepCmd = &cobra.Command{
 	Use:   "sweep",
 	Short: "Sweep the poops",
 	Run: func(cmd *cobra.Command, args []string) {
-        src.ActOnCommand(src.SWEEP)
+        internal.ActOnCommand(internal.SWEEP)
 	},
 }
 

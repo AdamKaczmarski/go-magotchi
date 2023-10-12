@@ -1,8 +1,8 @@
-package src
+package internal
 
 import (
 	"fmt"
-	"gomagotchi/src/game"
+	"gomagotchi/internal/game"
 	"time"
 )
 

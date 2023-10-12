@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"gomagotchi/src"
+	"gomagotchi/internal"
 	"github.com/spf13/cobra"
 )
 
@@ -11,7 +11,7 @@ var gameCmd = &cobra.Command{
     Short: "Play a game with your Gomagotchi",
 	Long: "Play a guess if the number is higher or lower with your Gomagotchi to increase their happiness",
 	Run: func(cmd *cobra.Command, args []string) {
-        src.ActOnCommand(src.GAME)
+        internal.ActOnCommand(internal.GAME)
 	},
 }
 
